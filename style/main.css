@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "Atlas Grotesk LC Web Reg Italic";
+    font-family: "Atlas Grotesk";
     src:url("../font/Atlas Grotesk Web Regular Regular.ttf");
+}
+@font-face {
+    font-family: "Sharp Grotesk Book 25";
+    src:url("../font/Sharp Grotesk Book 25 Regular.ttf");
 }
 
 body{
@@ -15,12 +19,19 @@ a{
     display: flex;
     text-decoration: none;
 }
+header{
+    height:48px;
+}
 nav{
     height:48px;
     display: flex;
     border-bottom: 1px solid #e0e0e0;
     box-sizing: border-box;
-    justify-content: space-between;    
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    width: 99vw;
+    z-index: 999;
 }
 .left-nav{
     display: flex;
@@ -48,7 +59,7 @@ nav ul{
 nav li{
     list-style-type: none;
     padding:15px 16px;
-    font-family: "Atlas Grotesk LC Web Reg Italic";
+    font-family: "Atlas Grotesk";
 
 }
 nav ul li{
@@ -71,4 +82,99 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.section1{
+    display: flex;
+}
+.section1-left{
+    box-sizing: border-box;
+    width:50vw;
+}
+.section1-left>div:first-child{
+    background-color: rgb(247, 245, 242);
+    padding:24px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.section1-left>div>h1{
+    font-family: "Sharp Grotesk Book 25", "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -1;
+    line-height: 52.8px;
+}
+.section1-left>div>a{
+    font-family: "AtlasGrotesk", "Open Sans", sans-serif;
+    background-color:rgb(0, 97, 255);
+    color:rgb(255, 255, 255);
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding:8px 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+    text-align: center;
+}
+.section1-left-feature{
+    background-color: #d9d4cc;
+    box-sizing: border-box;
+    padding: 72px 72px;
+
+}
+.section1-left-feature p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "AtlasGrotesk", "Open Sans", sans-serif;
+}
+.section1-right{
+    width:50vw;
+}
+.section1-right-img1{
+    height: 240px;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+}
+.section1-right-img1 img{
+    position: absolute;
+}
+.section1-right-img2{
+    height: 490px;
+}
+.section2{
+    background-color: #f7f5f2;
+    box-sizing: border-box;
+    padding:48px 0px;
+    display: flex;
+    justify-content: center;
+}
+.section2-wrapper{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+.features-card{
+    width:225px;
+    font-family: "AtlasGrotesk", "Open Sans", sans-serif;
+}
+.features-card-img{
+    margin-bottom: 32px;
+}
+.features-card h2{
+    font-size: 16px;
+    margin:0 0 12px;
+}
+.features-card p{
+    font-size: 16px;
+    margin:0;
+    font-weight: 400;
+    line-height: 20px;
 }
