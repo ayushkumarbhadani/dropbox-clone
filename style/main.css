@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Atlas Grotesk LC Web Reg Italic";
+    src:url("../font/Atlas Grotesk Web Regular Regular.ttf");
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+a{
+    display: flex;
+    text-decoration: none;
+}
+nav{
+    height:48px;
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    justify-content: space-between;    
+}
+.left-nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+.logo-word{
+    padding: 16px;
+    margin-top: 4px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav li{
+    list-style-type: none;
+    padding:15px 16px;
+    font-family: "Atlas Grotesk LC Web Reg Italic";
+
+}
+nav ul li{
+    color:rgb(30, 25, 25);
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: #f2eee8;
+}
+.right-nav{
+    position: relative;
+    right: 0;
+    display: flex;
+}
+.primary-btn{
+    background-color: #0061fe;
+    color:#fff;
+    font-weight: bold;
+    border:3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
