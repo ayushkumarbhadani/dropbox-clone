@@ -11,12 +11,14 @@ body{
     margin:0;
     padding: 0;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
 ul{
     margin:0;
     padding: 0;
 }
 a{
-    display: flex;
     text-decoration: none;
 }
 header{
@@ -39,6 +41,9 @@ nav{
 .logo{
     display: flex;
     align-items: center;
+}
+.left-nav a{
+    display: flex;
 }
 .logo-icon{
     display: flex;
@@ -72,6 +77,9 @@ nav ul li:hover{
 .right-nav{
     position: relative;
     right: 0;
+    display: flex;
+}
+.right-nav a{
     display: flex;
 }
 .primary-btn{
@@ -183,6 +191,7 @@ nav ul li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 72px 0;
 }
 .section3-heading{
     text-align: center;
@@ -196,4 +205,68 @@ nav ul li:hover{
 .section3-para{
     color:#1e1919;
     font-family: "Atlas Grotesk", "Open Sans", sans-serif;
+}
+.section4{
+    display: flex;
+}
+.section4-left{
+    width:50vw;
+    box-sizing: border-box;
+    
+}
+.section4-inner-box{
+    padding: 0 12px 0 24px;
+}
+.section-inner-box-wrapper{
+    border-top: 1px solid black;
+}
+.section4-inner-box:hover{
+    background-color: rgba(166,145,113,0.12);
+}
+.section4-inner-box-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 24px 0;
+}
+.section4-inner-box-heading h4{
+    font-family: "Sharp Grotesk Book 25", "Open Sans", sans-serif;
+    font-size: 24px;
+    font-stretch: 100%;
+    font-weight: bold;   
+    color: #1e1919; 
+    cursor:default;
+}
+.section4-inner-box-para{
+    box-sizing: border-box;
+}
+.section4-inner-box-para p{
+    margin: 0;
+    font-family: "Atlas Grotesk", "Open Sans", sans-serif;
+    font-size: 16px;
+    padding-right: 76px;
+    line-height: 26px;
+}
+.section4-inner-box-para span{
+    padding:8px 20px;
+    border:1px solid rgb(30, 25, 25);
+    margin:24px 0px 32px;
+    display: inline-block;
+    font-family: "Atlas Grotesk", "Open Sans", sans-serif;
+}
+.section4-inner-box-para a{
+    color:#000;
+}
+.hidden{
+    display: none;
+}
+.section4-right{
+    background-color: #14c8eb;
+}
+.section4-right-wrapper{
+    width:90%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    top:50%;
+    left:50%;
 }
